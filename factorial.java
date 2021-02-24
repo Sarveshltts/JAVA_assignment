@@ -38,7 +38,18 @@ public class factorial {
 		// TODO Auto-generated method stub
 		Scanner inp=new Scanner(System.in);
 		int number=inp.nextInt();
+		if(number>32767)
+		{
+			System.out.println("Number too large");
+		}
+		else if(number<0)
+		{
+			System.out.println("Number too small");
+		}
+		else
+		{
 		digit_Factorial(number);
+		}
 	}
 
 }
