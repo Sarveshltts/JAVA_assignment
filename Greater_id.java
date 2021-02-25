@@ -1,6 +1,21 @@
 import java.util.*;
 public class Greater_id 
 {
+	private static void findCricketerId(int arr[], int num, int check)
+	{
+		 ArrayList<Integer> arr1=new ArrayList<Integer>();
+		for(int j=0;j<num;j++)
+	     {
+	        if(j%2==1)
+	        {
+	            if(arr[j]>check)
+	            {
+	                arr1.add(arr[j-1]);
+	            }
+	        }
+	     }
+	     System.out.println(arr1);
+	}
  public static void main(String[] args) 
  {
      Scanner inp=new Scanner(System.in);
@@ -11,7 +26,6 @@ public class Greater_id
          System.exit(0);
      }
      int[] arr= new int[num];
-     ArrayList<Integer> arr1=new ArrayList<Integer>();
      for(int i=0;i<num;i++)
      {
          arr[i]=inp.nextInt();
@@ -27,16 +41,6 @@ public class Greater_id
          System.out.print("Invalid score");
          System.exit(0);
      }
-     for(int j=0;j<num;j++)
-     {
-        if(j%2==1)
-        {
-            if(arr[j]>check)
-            {
-                arr1.add(arr[j-1]);
-            }
-        }
-     }
-     System.out.println(arr1);
+     findCricketerId(arr,num,check);
  }   
 }
