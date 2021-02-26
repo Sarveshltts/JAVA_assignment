@@ -44,7 +44,7 @@ public class Employee
         {
             System.out.println("Current name is: "+name);
             System.out.println("Enter the new Name:");
-            String name1=inp.nextLine();
+            String name1=inp.next();
             name=name1;
             display();
         }
@@ -52,7 +52,7 @@ public class Employee
         {
             System.out.println("Current address is: "+address);
             System.out.println("Enter the new Address");
-            String add=inp.nextLine();
+            String add=inp.next();
             setaddress(add);
             display();
         }
@@ -60,7 +60,7 @@ public class Employee
         {
             System.out.println("Current name is: "+mobile);
             System.out.println("Enter the new mobile");
-            String mob=inp.nextLine();
+            String mob=inp.next();
             setmobile(mob);
             display();
         }
