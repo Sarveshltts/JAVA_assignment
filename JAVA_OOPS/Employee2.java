@@ -1,5 +1,5 @@
 import java.util.*;
-public class Employee 
+public class Employee2 
 {
     private String name;
 	private String address;
