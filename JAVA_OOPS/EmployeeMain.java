@@ -12,7 +12,7 @@ public class EmployeeMain
         String add=inp.nextLine();
         System.out.println("Enter the mobile no.: ");
         String mob=inp.nextLine();
-        Employee e=new Employee();
+        Employee2 e=new Employee2();
         e.setname(name);
         e.setaddress(add);
         e.setmobile(mob);
