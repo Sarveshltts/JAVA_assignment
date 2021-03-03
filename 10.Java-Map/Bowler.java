@@ -1,6 +1,22 @@
 
+
 public class Bowler {
 	private String name;
+
+	public Bowler() {
+		super();
+	}
+	
+	
+	
+
+	public Bowler(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+	
 
 	public String getName() {
 		return name;
@@ -9,9 +25,6 @@ public class Bowler {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 
-	public Bowler(String name) {
-		super();
-		this.name = name;
-	}
 }
